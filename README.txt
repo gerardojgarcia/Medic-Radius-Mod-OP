@@ -49,7 +49,7 @@ Not recommended for competitive multiplayer due to extreme buffs.
 COMPATIBILITY
 ------------------------------------------------------------
 
-- Compatible with game versions 1.500 – 1.510
+- Compatible with game versions 1.058 – 1.060
 - Will conflict with any other mod that changes medic_zone.def
   or medic_zone2.def
 - Safe to load in existing saves
