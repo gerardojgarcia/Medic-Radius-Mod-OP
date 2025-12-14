@@ -1,0 +1,43 @@
+{game_entity	;// zone used for medic revive place-able location 
+	{Extension "medic_zone.mdl"}
+	{props "medic_tent"} ;// hardcoded
+
+	{extender "medic_tent"
+		{defaultRadius 35} ;// heal radius in meter
+		{viewsToScale "tent_circle"} ;// client only
+		;{viewsToScale "tent_circle tent_aura"} ;// client only
+	}
+
+	{DecalView tent_circle	;// outer red circle 
+		{Sprite "automedic.ebm"
+			{Visibility 0.25}
+			{PreScaleX 1.0}
+			{PreScaleY 1.0}
+		}
+		{Layer grounddynamic}
+	}
+
+	{SpriteView tent_aura ;// center red glow
+		{sprite "medic"
+			{PreScaleX 0.15}
+			{PreScaleY 0.15}
+			{highlight 0xFF0000 }
+			{Light
+				{Peak
+					{min 0.20}
+					{max 0.20}
+				}
+			}
+			;{visibility 0.25}
+			{timer
+				{Mode play loop}
+				{duration 2}
+			}
+		}
+		{ground}
+		{layer grounddynamic}
+		{Offset 0 0 10}
+	}
+
+	{NoGetShadows}
+}

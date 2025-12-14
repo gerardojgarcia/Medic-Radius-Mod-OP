@@ -1,0 +1,19 @@
+; Medic Range – OP
+; Dramatically increases medic autoheal and revive-zone range for overpowered sandbox gameplay.
+
+{mod
+	; name of your mod
+	{name "Medic Range – OP"}
+
+	; description of your mod
+	{desc "Massively increases medic autoheal radius (medic_zone2) and revive-zone radius (medic_zone). Created for fun, experimental, or sandbox-style gameplay."}
+
+	; oldest tested compatible version
+	{minGameVersion "1.500"}
+
+	; latest version tested
+	{maxGameVersion "1.510"}
+
+	; no dependencies required
+}
+
